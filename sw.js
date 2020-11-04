@@ -15,6 +15,7 @@ const revalidate = {
   },
 
   async _fetchRequest(request) {
+    if (request.cache === 'only-if-cached' && request.mode !== 'same-origin') return
     const response = await fetch(request);
     if (!response || response.status !== 200) return response;
     const cache = await caches.open(CACHE_NAME);
