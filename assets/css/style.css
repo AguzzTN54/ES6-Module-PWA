@@ -127,6 +127,7 @@ nav {
 }
 .stories .card-image img,
 .stories .card-image a {
+  margin-top: 0;
   height: 100%;
   width: auto;
 }
@@ -151,7 +152,8 @@ nav {
   font-family: 'Times New Roman', Times, serif;
 }
 article {
-  font-size: x-large;
+  font-size: large;
+  margin: 0;
 }
 .tips .card-image {
   height: 200px;
@@ -177,7 +179,12 @@ footer li a {
     text-align: center !important;
   }
   article {
-    font-size: large;
+    font-size: unset;
+    padding: 0;
+  }
+
+  .stories .card-image {
+    height: 230px;
   }
 
   .about h3 {
