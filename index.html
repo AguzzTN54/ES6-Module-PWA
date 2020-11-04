@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minggat Vacation</title>
+    <meta name="description" content="My first PWA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="style" href="./assets/css/materialize.min.css" />
+    <link rel="preload" as="style" href="./assets/css/style.css" />
+    <link rel="preload" as="script" href="./assets/js/materialize.min.js" />
+    <link
+      rel="preload"
+      href="./assets/fonts/JelyttaRegular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="./assets/css/materialize.min.css" />
+    <link rel="stylesheet" href="./assets/css/lazy-load-images.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="manifest" href="./manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/icon_32x32.png"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header style="margin-bottom: 55px;">
+      <!-- Preload -->
+      <div class="progress white">
+        <div class="indeterminate pink lighten-3"></div>
+      </div>
+      <!-- Navigasi -->
+      <app-bar></app-bar>
+      <!-- Akhir Navigasi -->
+    </header>
+
+    <!-- Content -->
+    <main id="body-content"></main>
+    <!-- Akhir Content -->
+
+    <!-- Footer -->
+    <footer-content></footer-content>
+    <script src="./assets/js/materialize.min.js"></script>
+    <script src="./assets/js/lazy-load-images.min.js"></script>
+    <script src="./module/index.js" type="module"></script>
+  </body>
+</html>
